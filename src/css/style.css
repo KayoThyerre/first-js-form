@@ -1,0 +1,83 @@
+main {
+    display: flex;
+    align-items: center;
+    background-image: url(../images/bg-repeat.jpg);
+    width: 800px;
+    height: 402px;
+}
+
+/* ---------- MENSAGE LEFT SIDE --------------*/
+
+main .out-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 50%;
+    color: white;
+    margin: 0px 60px;
+}
+
+main .out-content h1 {
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+main .out-content .duvida {
+    margin-bottom: 12px;
+}
+
+main .out-content p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* ---------- MENSAGE RIGHT SIDE --------------*/
+
+main .box-content {
+    width: 340px;
+    min-height: 378px;
+    margin: 12px 50px 12px 0px;
+    background-color: white;
+}
+
+main .box-content .user-information {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.input {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input input {
+    width: 100%;
+    padding: 6px;
+}
+
+.input .mensage{
+    width: 300px;
+    height: 100px;
+}
+
+.obrigatorio {
+    font-size: 8px;
+    color: red;
+    display: none;
+}
+
+.btn {
+    color: white;
+    background-color: #3CCC87;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+
+}
