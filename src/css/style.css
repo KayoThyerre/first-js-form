@@ -94,3 +94,8 @@ main .box-content .user-information {
     border: 1px solid #3CCC87;
     border-radius: 5px;
 }
+
+.error {
+    border: 1px solid red;
+    border-radius: 5px;
+}

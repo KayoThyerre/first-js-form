@@ -10,17 +10,20 @@ inputValid.forEach(function(input) {
     });
 });
 
-const btnEnviar = document.querySelector('.btn');
-const errorMessage = document.querySelectorAll('.obrigatorio');
+const buttonEnviar = document.querySelector('.btn');
 
-console.log(errorMessage)
+buttonEnviar.addEventListener('click', function() {
+    const inputs = document.querySelectorAll('.input input, .input-text textarea');
 
-btnEnviar.addEventListener('click', function() {
-    if (inputValid.value.trim() === "") {
-        errorMessage.style.display = "block";
-        input.classList.add('preenchido');
-    } else {
-        errorMessage.style.display = "none";
-        input.classList.remove('preenchido');
-    }
+    inputs.forEach(function(input) {
+        const obrigatorioMessage = input.nextElementSibling;
+        
+        if (input.value.trim() === '') {
+            obrigatorioMessage.style.display = 'block';
+            input.classList.add('error');
+        } else {
+            obrigatorioMessage.style.display = 'none';
+            input.classList.remove('error');
+        }
+    });
 });
